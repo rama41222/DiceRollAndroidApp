@@ -20,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/dicee_logo"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/dice_roll_logo"/>
 
     </RelativeLayout>
 
@@ -34,14 +35,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice2" />
+            app:srcCompat="@drawable/dice2"
+            android:contentDescription="@string/left_dice_content"/>
 
         <ImageView
             android:id="@+id/image_dice_slot_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dice1" />
+            app:srcCompat="@drawable/dice1"
+            android:contentDescription="@string/right_dice_content"/>
     </LinearLayout>
 
     <RelativeLayout

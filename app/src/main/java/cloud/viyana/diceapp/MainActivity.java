@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button flipButton;
-        flipButton = (Button) findViewById(R.id.button_flip);
+        flipButton = findViewById(R.id.button_flip);
 
-        final ImageView leftDice = (ImageView) findViewById(R.id.image_dice_slot_1);
-        final ImageView rightDice = (ImageView) findViewById(R.id.image_dice_slot_2);
+        final ImageView leftDice = findViewById(R.id.image_dice_slot_1);
+        final ImageView rightDice = findViewById(R.id.image_dice_slot_2);
 
         final int [] diceArray = {
                 R.drawable.dice1,
@@ -34,14 +34,11 @@ public class MainActivity extends AppCompatActivity {
         flipButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("Click", "Flip button");
                 Random diceRoll = new Random();
                 int randNumberLeft = diceRoll.nextInt(5) ;
-                int randNumberright = diceRoll.nextInt(5);
-
-                Log.d("dicee", "rand no= " + randNumberLeft + "--" + randNumberright );
+                int randNumberRight = diceRoll.nextInt(5);
                 leftDice.setImageResource(diceArray[randNumberLeft]);
-                rightDice.setImageResource(diceArray[randNumberright]);
+                rightDice.setImageResource(diceArray[randNumberRight]);
             }
         });
     }

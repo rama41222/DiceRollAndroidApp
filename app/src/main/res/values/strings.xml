@@ -7,4 +7,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="btn_flip_text">Flip</string>
+    <string name="left_dice_content">Left Dice</string>
+    <string name="right_dice_content">Right Dice</string>
+    <string name="dice_roll_logo">Logo</string>
 </resources>
