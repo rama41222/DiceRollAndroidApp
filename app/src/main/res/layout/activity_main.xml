@@ -13,7 +13,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="wrap_content"
+        android:padding="20dp">
 
         <ImageView
             android:id="@+id/image_logo"
@@ -21,7 +22,7 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/dicee_logo"
             android:layout_centerHorizontal="true"
-            android:contentDescription="@string/dice_roll_logo"/>
+            android:contentDescription="@string/dice_roll_logo" />
 
     </RelativeLayout>
 
@@ -36,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/dice2"
-            android:contentDescription="@string/left_dice_content"/>
+            android:contentDescription="@string/left_dice_content" />
 
         <ImageView
             android:id="@+id/image_dice_slot_2"
@@ -44,23 +45,27 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/dice1"
-            android:contentDescription="@string/right_dice_content"/>
+            android:contentDescription="@string/right_dice_content" />
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginBottom="0sp">
 
         <Button
             android:id="@+id/button_flip"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:background="#00c4fa"
             android:text="@string/btn_flip_text"
             android:textColor="#ffff"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            />
     </RelativeLayout>
 
 </LinearLayout>
